@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
+<!--xmlns:fx="http://javafx.com/fxml"-->
+<!--fx:controller="webnote.ProblemHbmXml"-->
+<!--prefHeight="400.0" prefWidth="600.0">-->
+
+<!--</AnchorPane>-->
+
+<hibernate-mapping package="webnote">
+    <class name="ProblemEntity" table="problem">
+    <id name="problemId" column="problemID">
+        <generator class="native"/>
+    </id>
+    <property name="userName"/>
+    <property name="problemName"/>
+    <property name="description"/>
+    <property name="reason"/>
+    <property name="subject"/>
+    <property name="semester"/>
+    <property name="addDate"/>
+    <property name="latestEditDate"/>
+    <property name="redoTimes"/>
+    <property name="answer"/>
+    <property name="tags"/>
+    </class>
+</hibernate-mapping>

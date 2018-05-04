@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>WebNoteManagerServlet</servlet-name>
+        <servlet-class>webnote.UserManagerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WebNoteManagerServlet</servlet-name>
+        <url-pattern>/WebNoteManager</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserManagerServlet</servlet-name>
+        <servlet-class>webnote.UserManagerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserManagerServlet</servlet-name>
+        <url-pattern>/UserManager</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProblemManagerServlet</servlet-name>
+        <servlet-class>webnote.ProblemManagerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProblemManagerServlet</servlet-name>
+        <url-pattern>/ProblemManager</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>webnote.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/checkuser</url-pattern>
+    </servlet-mapping>
+</web-app>
